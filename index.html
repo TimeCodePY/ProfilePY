@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +8,59 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
 </head>
+
 <body>
     <header>
-        <a href="#" class="logo">Alex</a>
-
+        <a href="#" class="logo">TimeCodePY</a>
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >Services</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
+            <a href="#" class="nav-link active" data-section="home">Home</a>
+            <a href="#" class="nav-link" data-section="product">Product</a>
+            <a href="#" class="nav-link" data-section="contact">Contact</a>
         </nav>
     </header>
-    <section class="home">
+
+    <!-- Home -->
+    <section class="home section" id="home">
         <div class="home-img">
             <img src="main.jpg" alt="">
         </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Alex</span></h1>
+            <h1>Hi, It's <span>Palm</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <p> I recently graduated with a degree in digital technology. I am specializing in node.js development.
+                However, I discovered a strong interest in backend development and decided to change my career path.
+                learn new technologies quickly, and am eager to develop my web development skills to lead my knowledge
+                to full-stack web development.</p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/punnawat-palm/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/TimeCodePY"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/PlamKungKing/"><i class="fa-brands fa-facebook"></i></a>
             </div>
-            <a href="#" class="btn">Hire me</a>
         </div>
     </section>
+
+    <!-- Product -->
+    <section class="home section" id="product" style="display:none;">
+        <div class="home-content">
+            <h1>Products</h1>
+            <p>Here you can see all the products we offer.</p>
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="home section" id="contact" style="display:none;">
+        <div class="home-content">
+            <h1>Contact Us</h1>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/punnawat-palm/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/TimeCodePY"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/PlamKungKing/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
