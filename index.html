@@ -16,7 +16,10 @@
             <a href="#" class="nav-link active" data-section="home">Home</a>
             <a href="#" class="nav-link" data-section="product">Product</a>
             <a href="#" class="nav-link" data-section="contact">Contact</a>
+            <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
         </nav>
+
     </header>
 
     <!-- Home -->
@@ -40,17 +43,81 @@
     </section>
 
     <!-- Product -->
-    <section class="home section" id="product" style="display:none;">
-        <div class="home-content">
+    <section class="home section" id="product" style="display:none; flex-direction: column;">
+        <div class="home-content"
+            style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
             <h1>Products</h1>
             <p>Here you can see all the products we offer.</p>
         </div>
 
+        <div class="product-container">
+            <!-- Card 1 -->
+            <div class="product-card" data-title="FLRU" data-description="พัฒนาเว็บไซต์สำหรับหน่วยงานในมหาวิทยาลัย"
+                data-img="FLRU-Product.png" data-link="https://timecodepy.github.io/react-flru-pages/#/">
+                <img src="FLRU-Product.png" alt="FLRU Project">
+                <h2>FLRU</h2>
+                <p>พัฒนาเว็บไซต์สำหรับหน่วยงานในมหาวิทยาลัย</p>
+                <div class="tech-icons">
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-node"></i>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="product-card" data-title="Aladdin : The labyrinth of the ancients"
+                data-description="เกม 2D พัฒนาด้วย Unity C# เกมแนวการต่อสู้พิชิตดันเจี้ยน"
+                data-video="https://www.youtube.com/embed/hYB2NSBWpRw"
+                data-link="https://www.youtube.com/embed/hYB2NSBWpRw">
+                <img src="Aladdin.jpg" alt="Aladdin Project">
+                <h2>Aladdin : The labyrinth of the ancients</h2>
+                <p>พัฒนาเกม 2D ด้วย Unity C# เกมแนวการต่อสู้พิชิตดันเจี้ยน</p>
+                <div class="tech-icons">
+                    <i class="fa-brands fa-unity"></i>
+                    <span class="iconify fa-brands" data-icon="simple-icons:csharp"></span>
+
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="product-card" data-title="DGT-GASHAPON"
+                data-description="ออกแบบเว็บไซต์เกี่ยวกับ Art toy รับหน้าที่เป็น UX/UI Designer"
+                data-img="DGT-GASHAPON.jpg" data-video=""
+                data-link="https://www.canva.com/design/DAFu0Y7gaVQ/h1pLqkLBOIb3hgFYJgBNWw/edit?utm_content=DAFu0Y7gaVQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                <img src="DGT-GASHAPON.jpg" alt="GASHAPON Project">
+                <h2>DGT-GASHAPON</h2>
+                <p>ออกแบบเว็บไซต์เกี่ยวกับ Art toy รับหน้าที่เป็น UX/UI Designer</p>
+                <div class="tech-icons">
+                    <img src="Figma.png" alt="Figma" class="tech-icon">
+                </div>
+            </div>
+
+
+
+        </div>
     </section>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <!-- รูป -->
+            <img id="modal-img" src="" alt="Project Image" style="display:none;">
+
+            <!-- วิดีโอ -->
+            <iframe id="modal-video" src="" frameborder="0" allowfullscreen
+                style="display:none; width:100%; height:400px;"></iframe>
+
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a id="modal-link" href="#" target="_blank" class="btn">Go to Website</a>
+        </div>
+    </div>
+
 
     <!-- Contact -->
     <section class="home section" id="contact" style="display:none;">
-        <div class="home-content">
+        <div class="home-content" style="display: flex; flex-direction: column; align-items: center;">
             <h1>Contact Us</h1>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/punnawat-palm/"><i class="fa-brands fa-linkedin"></i></a>
